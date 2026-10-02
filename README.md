@@ -1,6 +1,6 @@
 # FIND WHAT
 
-**FIND WHAT** é um jogo multiplayer local/online desenvolvido em Unreal Engine 5. O objetivo principal é encontrar itens específicos escondidos em meio a uma multidão de objetos espalhados por fases instanciadas dinamicamente.
+**FIND WHAT** é um jogo multiplayer local desenvolvido em Unreal Engine 5. O objetivo principal é encontrar itens específicos escondidos em meio a uma multidão de objetos espalhados por fases instanciadas dinamicamente.
 
 ---
 
