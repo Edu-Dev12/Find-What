@@ -40,3 +40,13 @@ Cada partida apresenta desafios únicos onde os itens são instanciados individu
 3. No Editor, navegue até a pasta de UI e abra o mapa de menu principal.
 4. Nas configurações de Play, defina o número de jogadores para 2 ou mais e selecione o modo Standalone.
 5. Clique em Play.
+
+### Reflexão sobre Consistência e Segurança
+1. Condições de Corrida (Race Conditions): 
+No nosso jogo, o servidor bloqueia a ação de ambos os jogadores caso isso aconteça.
+
+2. Consistência de Dados e Latência:
+No nosso jogo, todos os clientes estão sincronizados com o servidor para manter consistência para todos. O risco de ver algo diferente existe no momento que o cliente não consegue receber frequentemente os dados do servidor.
+
+3. Autoridade e Trapaças (Cheating): 
+As informações confiadas ao cliente em grande parte não são sensíveis (maioria são condições para código e similares), porém uma delas é uma referência direta ao objeto que o jogador deve encontrar. Com isso, seria possível trapacear tendo um marcador (ou algo do tipo) mostrando na tela do jogador onde o item-objetivo está.
